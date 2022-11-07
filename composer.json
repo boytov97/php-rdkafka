@@ -5,8 +5,5 @@
             "name": "Turarbek Boyutov",
             "email": "boytov97@gmail.com"
         }
-    ],
-    "require": {
-        "idealo/php-rdkafka-ffi": "0.4.0"
-    }
+    ]
 }
