@@ -33,6 +33,21 @@ make connect_php_container
 
 Теперь запускаем consumer. Внутри контейнера, который мы только что подключились выполняем следующую команду:
 
+---
+**NOTE**
+
+Перед тем, как запустить consumer, убедитесь в том, что topic "php_rdkafka" создался. Список topic-ов можете
+посмотреть переходив по адресу ``` http://localhost:8080 ```.  Если топик не создался, вы можете создать topic 
+здесь ``` http://localhost:8080/ui/clusters/local/topics ```
+
+В этом изображении показано все своиства topic-а, который нужно создать:
+
+![Alt text](./images/php_rdkafka.png?raw=true "Optional Title")
+
+![Alt text](./images/php_rdkafka_settings.png?raw=true "Optional Title")
+
+---
+
 ```
 php ./public/consumer.php
 ```
