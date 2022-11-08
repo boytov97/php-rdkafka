@@ -2,6 +2,7 @@ version: '2'
 services:
   php:
     build: ./docker/php
+    container_name: php-rdkafka
     volumes:
       - ./:/usr/share/nginx/www
     working_dir: /usr/share/nginx/www
