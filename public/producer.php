@@ -21,7 +21,7 @@ if (!$producer->getMetadata(false, $topic, 2000)) {
     exit;
 }
 
-$time = time();
+$time = (new DateTime())->format('Y-m-d H:i:s');
 $topic->produce(0, 0, "It is {$time}");
 
 $producer->poll(1000);
